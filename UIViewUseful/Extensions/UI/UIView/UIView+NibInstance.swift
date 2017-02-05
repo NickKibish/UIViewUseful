@@ -22,9 +22,9 @@ public protocol NIBInstance {
     init(nibName: String)
 }
 
-public extension NIBInstance {
+extension NIBInstance {
     /// Name of NIB (XIB), where the view was design. By default it's class name
-    static var nibName: String {
+    public static var nibName: String {
         return String(describing: self)
     }
     
@@ -36,7 +36,7 @@ public extension NIBInstance {
     /// Use this initializer to init view from determined XIB.
     ///
     /// - Parameter nibName: name of XIB. You can use static nibName variable
-    init(nibName: String) {
+    public init(nibName: String) {
         let nib = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)
         self = (nib?.first)! as! Self
     }
