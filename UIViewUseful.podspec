@@ -24,8 +24,6 @@ The library becomes better day after day.
 This is set of extension of UIKit framework.
 It includes extensions of:
   - UIView
-
-For more details see wiki
                        DESC
 
   s.homepage         = 'https://github.com/NickKibish/UIViewUseful'
