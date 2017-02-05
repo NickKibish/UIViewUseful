@@ -29,7 +29,7 @@ public extension NIBInstance {
     }
     
     /// Name of NIB (XIB), where the view was design. By default it's class name
-    open var nibName: String {
+    var nibName: String {
         return String(describing: type(of: self))
     }
     
