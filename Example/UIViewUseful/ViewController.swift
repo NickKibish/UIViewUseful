@@ -7,18 +7,31 @@
 //
 
 import UIKit
+import UIViewUseful
+
+class TestView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    var nibName: String {
+        return ""
+    }
+    
+    static var nibName: String {
+        return ""
+    }
+}
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
