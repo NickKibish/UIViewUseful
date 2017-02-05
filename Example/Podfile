@@ -1,14 +1,14 @@
 use_frameworks!
 
 target 'UIViewUseful_Example' do
-  pod 'UIViewUseful', :path => '../'
+	pod 'UIViewUseful', :path => '../'
 
-  target 'UIViewUseful_Tests' do
-    inherit! :search_paths
+	target 'UIViewUseful_Tests' do
+		inherit! :search_paths
 
-    pod 'Quick', '~> 1.0.0'
-  pod 'Nimble', '~> 5.1.1'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
-  end
+		pod 'Quick', '~> 1.0.0'
+		pod 'Nimble', '~> 6.0'
+		pod 'FBSnapshotTestCase'
+		pod 'Nimble-Snapshots'
+	end
 end
