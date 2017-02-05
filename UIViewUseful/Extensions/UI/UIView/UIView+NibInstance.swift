@@ -29,7 +29,7 @@ public extension NIBInstance {
     }
     
     /// Name of NIB (XIB), where the view was design. By default it's class name
-    public var nibName: String {
+    open var nibName: String {
         return String(describing: type(of: self))
     }
     
@@ -45,7 +45,7 @@ public extension NIBInstance {
 // MARK: - NIBInstance
 extension UIView: NIBInstance {
     /// View, which should be added to this view. Use it, when you need use view, created in XIB 
-    public var outletView: UIView {
+    open var outletView: UIView {
         return UIView()
     }
     

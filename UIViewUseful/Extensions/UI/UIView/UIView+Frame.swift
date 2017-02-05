@@ -16,7 +16,7 @@ extension UIView {
         }
         set {
             var frame = self.frame
-            frame.size.height = height
+            frame.size.height = newValue
             self.frame = frame
         }
     }
@@ -27,7 +27,7 @@ extension UIView {
         }
         set {
             var frame = self.frame
-            frame.size.width = width
+            frame.size.width = newValue
             self.frame = frame
         }
     }
@@ -38,7 +38,7 @@ extension UIView {
         }
         set {
             var frame = self.frame
-            frame.origin.y = y
+            frame.origin.y = newValue
             self.frame = frame
         }
     }
@@ -49,7 +49,7 @@ extension UIView {
         }
         set {
             var frame = self.frame
-            frame.origin.x = x
+            frame.origin.x = newValue
             self.frame = frame
         }
     }

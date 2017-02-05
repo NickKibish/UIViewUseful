@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - Layered values
-extension UIView {
+public extension UIView {
     @IBInspectable
     public var cornerRadius: CGFloat {
         get {

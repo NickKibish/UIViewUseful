@@ -9,24 +9,8 @@
 import UIKit
 import UIViewUseful
 
-class TestView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        
-    }
+class View: UIView {
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    var nibName: String {
-        return ""
-    }
-    
-    static var nibName: String {
-        return ""
-    }
 }
 
 class ViewController: UIViewController {
