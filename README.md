@@ -1,3 +1,6 @@
+It's still beta version.
+The library becomes better day after day.
+
 # UIViewUseful
 
 [![CI Status](http://img.shields.io/travis/git/UIViewUseful.svg?style=flat)](https://travis-ci.org/git/UIViewUseful)
