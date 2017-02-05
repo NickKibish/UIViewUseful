@@ -8,10 +8,17 @@
 
 import UIKit
 
+/// Protocol for instance View from XIB
 public protocol NIBInstance {
+    /// Name of NIB (XIB), where the view was design. By default it's class name
     static var nibName: String { get }
+    /// Name of NIB (XIB), where the view was design. By default it's class name
     var nibName: String { get }
+    /// /// View, which should be added to this view. Use it, when you need use view, created in XIB
     var outletView: UIView { get }
+    /// Use this initializer to init view from determined XIB.
+    ///
+    /// - Parameter nibName: name of XIB. You can use static nibName variable
     init(nibName: String)
 }
 
