@@ -5,11 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/UIViewUseful.svg?style=flat)](http://cocoapods.org/pods/UIViewUseful)
 [![Platform](https://img.shields.io/cocoapods/p/UIViewUseful.svg?style=flat)](http://cocoapods.org/pods/UIViewUseful)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+## Extensions
+[UIView](https://github.com/NickKibish/UIViewUseful/tree/master/UIViewUseful/Extensions/UI/UIView)
 
 ## Installation
 
