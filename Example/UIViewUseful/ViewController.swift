@@ -12,6 +12,8 @@ import UIViewUseful
 class TestView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,6 +30,8 @@ class TestView: UIView {
 }
 
 class ViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
 
