@@ -37,13 +37,12 @@ extension UIButton {
         switch position {
         case .top:
             setImageOverTitle(totalHeight: totalSideSize, imageSize: imageSize, titleSize: titleSize)
-            break
         case .bottom:
-            break
+            setImageUnderTitle(totalHeight: totalSideSize, imageSize: imageSize, titleSize: titleSize)
         case .left:
             break
         case .right:
-            break
+            setImageRightToTitle(totalWidth: totalSideSize, imageSize: imageSize, titleSize: titleSize)
         }
     }
     
@@ -54,9 +53,9 @@ extension UIButton {
     }
     
     private func setImageUnderTitle(totalHeight: CGFloat, imageSize: CGSize, titleSize: CGSize) {
-        imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: -(totalHeight - imageSize.height), right: titleSize.width)
-        titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageSize.width, bottom: -(totalHeight - titleSize.height), right: 0)
-        contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: titleSize.height, right: 0)
+        imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -titleSize.width)
+        titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageSize.width, bottom: (totalHeight - titleSize.height), right: 0)
+        contentEdgeInsets = UIEdgeInsets(top: titleSize.height, left: 0, bottom: 0, right: 0)
     }
     
     private func setImageLeftToTitle(totalWidth: CGFloat, imageSize: CGSize, titleSize: CGSize) {
@@ -66,8 +65,8 @@ extension UIButton {
     }
     
     private func setImageRightToTitle(totalWidth: CGFloat, imageSize: CGSize, titleSize: CGSize) {
-        //        imageEdgeInsets = UIEdgeInsets(top: -(totalHeight - imageSize.height), left: 0, bottom: 0, right: titleSize.width)
-        //        titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageSize.width, bottom: -(totalHeight - titleSize.height), right: 0)
-        contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: titleSize.height, right: 0)
+        imageEdgeInsets = UIEdgeInsets(top: 0, left: totalWidth, bottom: 0, right: 0)
+        titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: totalWidth)
+        contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }

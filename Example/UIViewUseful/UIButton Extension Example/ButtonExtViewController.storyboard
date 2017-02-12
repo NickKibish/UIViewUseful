@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TuU-6f-MjK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Button Ext View Controller-->
+        <scene sceneID="Ej5-ob-2El">
+            <objects>
+                <viewController id="TuU-6f-MjK" customClass="ButtonExtViewController" customModule="UIViewUseful_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uhx-Bt-0Dt"/>
+                        <viewControllerLayoutGuide type="bottom" id="S3g-vv-Zwh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cOV-gh-jaa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mre-Cc-eEc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="162"/>
+                                <state key="normal" title="Left" image="Left-100">
+                                    <color key="titleColor" red="0.30980393290000002" green="0.015686275440000001" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-Cn-kMn">
+                                <rect key="frame" x="0.0" y="182" width="375" height="161.5"/>
+                                <state key="normal" title="Right" image="Right-100">
+                                    <color key="titleColor" red="0.30980393290000002" green="0.015686275440000001" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wn-R7-ORI">
+                                <rect key="frame" x="0.0" y="343.5" width="375" height="162"/>
+                                <state key="normal" title="Top" image="Up-100">
+                                    <color key="titleColor" red="0.30980393290000002" green="0.015686275440000001" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z47-hU-bwg">
+                                <rect key="frame" x="0.0" y="505.5" width="375" height="161.5"/>
+                                <state key="normal" title="Bottom" image="Down-100">
+                                    <color key="titleColor" red="0.30980393290000002" green="0.015686275440000001" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z47-hU-bwg" firstAttribute="top" secondItem="7Wn-R7-ORI" secondAttribute="bottom" id="69f-5U-iA8"/>
+                            <constraint firstAttribute="trailing" secondItem="Z47-hU-bwg" secondAttribute="trailing" id="BRS-m8-ZeE"/>
+                            <constraint firstItem="S3g-vv-Zwh" firstAttribute="top" secondItem="Z47-hU-bwg" secondAttribute="bottom" id="CyK-w9-3C7"/>
+                            <constraint firstItem="MdR-Cn-kMn" firstAttribute="leading" secondItem="cOV-gh-jaa" secondAttribute="leading" id="Hvj-M6-AlY"/>
+                            <constraint firstItem="Z47-hU-bwg" firstAttribute="leading" secondItem="cOV-gh-jaa" secondAttribute="leading" id="ITg-GV-irr"/>
+                            <constraint firstItem="Mre-Cc-eEc" firstAttribute="leading" secondItem="cOV-gh-jaa" secondAttribute="leading" id="Kye-XU-wgd"/>
+                            <constraint firstAttribute="trailing" secondItem="7Wn-R7-ORI" secondAttribute="trailing" id="NE7-4G-OEB"/>
+                            <constraint firstItem="MdR-Cn-kMn" firstAttribute="height" secondItem="Mre-Cc-eEc" secondAttribute="height" id="Pv8-v2-ggG"/>
+                            <constraint firstItem="7Wn-R7-ORI" firstAttribute="top" secondItem="MdR-Cn-kMn" secondAttribute="bottom" id="Wf7-uX-xfm"/>
+                            <constraint firstItem="7Wn-R7-ORI" firstAttribute="leading" secondItem="cOV-gh-jaa" secondAttribute="leading" id="abh-Su-LIT"/>
+                            <constraint firstAttribute="trailing" secondItem="Mre-Cc-eEc" secondAttribute="trailing" id="cLL-W1-MVh"/>
+                            <constraint firstItem="MdR-Cn-kMn" firstAttribute="top" secondItem="Mre-Cc-eEc" secondAttribute="bottom" id="fhM-k0-rIP"/>
+                            <constraint firstAttribute="trailing" secondItem="MdR-Cn-kMn" secondAttribute="trailing" id="g8z-19-VZr"/>
+                            <constraint firstItem="Z47-hU-bwg" firstAttribute="height" secondItem="Mre-Cc-eEc" secondAttribute="height" id="maW-dU-Xot"/>
+                            <constraint firstItem="Mre-Cc-eEc" firstAttribute="top" secondItem="uhx-Bt-0Dt" secondAttribute="bottom" id="vIu-D7-h1C"/>
+                            <constraint firstItem="7Wn-R7-ORI" firstAttribute="height" secondItem="Mre-Cc-eEc" secondAttribute="height" id="vYN-2J-Qjc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomBtn" destination="Z47-hU-bwg" id="et0-3O-6t6"/>
+                        <outlet property="leftBtn" destination="Mre-Cc-eEc" id="hbJ-iK-Ypx"/>
+                        <outlet property="rightBtn" destination="MdR-Cn-kMn" id="Lgx-E4-J0j"/>
+                        <outlet property="topBtn" destination="7Wn-R7-ORI" id="V6b-z4-uSv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUy-p3-3Fs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Down-100" width="100" height="100"/>
+        <image name="Left-100" width="100" height="100"/>
+        <image name="Right-100" width="100" height="100"/>
+        <image name="Up-100" width="100" height="100"/>
+    </resources>
+</document>

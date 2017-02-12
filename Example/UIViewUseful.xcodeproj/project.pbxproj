@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E48E2F8E881D4522F0C6B3F /* Pods_UIViewUseful_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420CED99D606FA714C896437 /* Pods_UIViewUseful_Example.framework */; };
+		4307738F1E5092A900D22CEE /* ButtonExtViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4307738E1E5092A900D22CEE /* ButtonExtViewController.storyboard */; };
+		430773911E5092B900D22CEE /* ButtonExtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430773901E5092B900D22CEE /* ButtonExtViewController.swift */; };
 		432349AF1E479068008848AB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432349AE1E479068008848AB /* TestView.swift */; };
 		432349B11E47919C008848AB /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432349B01E47919C008848AB /* TestView.xib */; };
 		432349B31E4794AF008848AB /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432349B21E4794AF008848AB /* TestView2.swift */; };
@@ -36,6 +38,8 @@
 		21E7818FF4972F04D4F1BE8E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		319ACD4945F6FD245557BE28 /* UIViewUseful.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UIViewUseful.podspec; path = ../UIViewUseful.podspec; sourceTree = "<group>"; };
 		420CED99D606FA714C896437 /* Pods_UIViewUseful_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIViewUseful_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4307738E1E5092A900D22CEE /* ButtonExtViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ButtonExtViewController.storyboard; sourceTree = "<group>"; };
+		430773901E5092B900D22CEE /* ButtonExtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonExtViewController.swift; sourceTree = "<group>"; };
 		432349AE1E479068008848AB /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		432349B01E47919C008848AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		432349B21E4794AF008848AB /* TestView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4307738D1E50927900D22CEE /* UIButton Extension Example */ = {
+			isa = PBXGroup;
+			children = (
+				4307738E1E5092A900D22CEE /* ButtonExtViewController.storyboard */,
+				430773901E5092B900D22CEE /* ButtonExtViewController.swift */,
+			);
+			path = "UIButton Extension Example";
+			sourceTree = "<group>";
+		};
 		432349AD1E479033008848AB /* View Extension Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 		607FACD21AFB9204008FA782 /* Example for UIViewUseful */ = {
 			isa = PBXGroup;
 			children = (
+				4307738D1E50927900D22CEE /* UIButton Extension Example */,
 				432349AD1E479033008848AB /* View Extension Example */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -273,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				432349B11E47919C008848AB /* TestView.xib in Resources */,
+				4307738F1E5092A900D22CEE /* ButtonExtViewController.storyboard in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				432349B51E4794B6008848AB /* TestView2.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
@@ -387,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430773911E5092B900D22CEE /* ButtonExtViewController.swift in Sources */,
 				432349AF1E479068008848AB /* TestView.swift in Sources */,
 				432349B71E479543008848AB /* ViewExtViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
